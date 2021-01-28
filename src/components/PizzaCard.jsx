@@ -8,8 +8,8 @@ export function PizzaCard({ data, setOrdered }) {
       <Card.Body className="d-flex flex-column">
         <div className="d-flex mb-2 justify-content-between">
           <Card.Title className="mb-0 font-weight-bold">{data.name}</Card.Title>
-          <Badge pill className="mb-1" variant="warning">
-            £{data.price}
+          <Badge pill className="mb-1" variant="success">
+            ${data.price}
           </Badge>
         </div>
         <Card.Text className="text-secondary">{data.desc}</Card.Text>

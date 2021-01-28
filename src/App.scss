@@ -19,9 +19,9 @@
      margin: 20px 0;
      padding: 0;
      line-height: 1;
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Roboto', sans-serif,'Brush Script MT';
      color: #202020;
-     background-color: #fbfbfb;
+     background-color: #080808;
      font-smooth: always;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
@@ -41,3 +41,27 @@
      bottom: 20px;
      z-index: 10;
    }
+
+
+
+   h2.BrushSc-font {
+    font-family: 'Brush Script MT', sans-serif !important ;
+    }
+
+   //==========RESPONSIVE TYPOGRAPHY==================//@at-root
+
+
+
+   h1 { font-size: 15px; }
+
+   @media screen and (min-width: 480px) {
+     h1 { font-size: 16px; }
+   }
+   @media screen and (min-width: 640px) {
+     h1 { font-size: 17px; }
+   }
+   @media screen and (min-width: 1024px) {
+     h1 { font-size: 19px; }
+   }
+   
+   
