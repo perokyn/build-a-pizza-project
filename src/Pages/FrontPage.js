@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
-import { Container, Row, Col, Image} from 'react-bootstrap';
+import { Container, Row, Col, Image,} from 'react-bootstrap';
 import {SlideShow} from '../components/Carousel'
 import { PizzaCard } from '../components/PizzaCard';
 import { Confirmation } from '../components/Confirmation';
 import pizzas from '../data';
-
+import {Dragg} from '../components/Dragg'
 
 export function FrontPage() {
 
@@ -58,9 +58,9 @@ export function FrontPage() {
 
         </Row>
         
-      <Row  className='mt-3'>
+      <Row  className='mt-3 '>
         {pizzas.map(data => (
-          <Col xs={3} className="wmb-5" key={`${data.id}`}>
+          <Col xs={12} sm={6} xl={3} className="mb-5" key={`${data.id}`}>
             <PizzaCard data={data} setOrdered={displayConfirmation} />
           </Col>
         ))}
@@ -69,8 +69,15 @@ export function FrontPage() {
 </Col>
 
   </Row>
+<Container >
+<Row>
 
-
+  <Col>
+  
+  <Dragg/>
+  </Col>
+</Row>
+</Container >
     </Container>
 
 
