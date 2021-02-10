@@ -30,7 +30,7 @@ export function FrontPage() {
 
 <Col >
 
-<SlideShow/>
+{/*<SlideShow/>*/}
 
 </Col>
 
