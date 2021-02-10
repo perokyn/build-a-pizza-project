@@ -5,7 +5,7 @@ import { PizzaCard } from '../components/PizzaCard';
 import { Confirmation } from '../components/Confirmation';
 import pizzas from '../data';
 import {Dragg} from '../components/Dragg'
-
+import Draggable from '../components/Draggable'
 export function FrontPage() {
 
 
@@ -74,7 +74,8 @@ export function FrontPage() {
 
   <Col>
   
-  <Dragg/>
+  
+  <Draggable/>
   </Col>
 </Row>
 </Container >
